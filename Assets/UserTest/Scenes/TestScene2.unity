@@ -767,6 +767,23 @@ PositionConstraint:
   m_Sources:
   - sourceTransform: {fileID: 0}
     weight: 1
+--- !u!1 &542111023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8724454378893721, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
+  m_PrefabInstance: {fileID: 618483098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &542111031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542111023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0051df72c855c19489b6f0a9e717db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &586920145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3487449452145913346, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
