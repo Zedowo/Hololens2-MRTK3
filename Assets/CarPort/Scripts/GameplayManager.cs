@@ -9,6 +9,8 @@ public class GameplayManager : MonoBehaviour
     private int currentScore;
     public Text laneText;
     private int currentScore2;
+    public Text speedText;
+    private int currentSpeed;
 
 
     public void UpdateScore(int score)
@@ -22,10 +24,15 @@ public class GameplayManager : MonoBehaviour
         currentScore2 += score;
         laneText.text = "Crosses: " + currentScore2.ToString();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
+    public void UpdateSpeed(int speed) {
+        //currentSpeed = (Rigidbody X Axis Speed + Z Axis Speed)/2 == Average speed across X and Z Axis?
+        //speedText.text = "Speed: " + currentSpeed.ToString();
+    }
 
+    // Start is called before the first frame update
+    void Start() 
+    {
+        
     }
 
     // Update is called once per frame

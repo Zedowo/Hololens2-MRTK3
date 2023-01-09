@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &41952380 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5467714691561389482, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+  m_PrefabInstance: {fileID: 5856709150682361683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &131485137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3493013819197874656, guid: ad5b753b73e311143a85055b15cea562, type: 3}
@@ -1871,6 +1876,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
+--- !u!1 &2127078814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2127078815}
+  - component: {fileID: 2127078817}
+  - component: {fileID: 2127078816}
+  m_Layer: 5
+  m_Name: SpeedText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2127078815
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127078814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 41952380}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -223.2, y: 25}
+  m_SizeDelta: {x: 336.7303, y: 225}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2127078816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127078814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.048674583, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 300
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Speed:'
+--- !u!222 &2127078817
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127078814}
+  m_CullTransparentMesh: 1
 --- !u!1001 &868024575797729513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1971,6 +2055,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Sidewalk
       objectReference: {fileID: 0}
+    - target: {fileID: 3566192342526830405, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566192342526830405, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591575628184183121, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -222
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591575628184183121, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 3592600176242449067, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
       propertyPath: m_TagString
       value: Sidewalk
@@ -2051,9 +2151,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestRoad_Components
       objectReference: {fileID: 0}
+    - target: {fileID: 7116704404981404322, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116704404981404322, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 61.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7389412296344836874, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933180873745054315, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933180873745054315, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 9002412434477528791, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
       propertyPath: m_TagString
