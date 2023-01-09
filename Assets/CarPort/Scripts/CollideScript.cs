@@ -7,31 +7,27 @@ public class CollideScript : MonoBehaviour
 {
     public int bump = 1;
     public int lanepass = 1;
-    private GameplayManager gamepLayManager;
+    private GameplayManager gamePlayManager;
 
     private void Awake()
     {
-        gamepLayManager = GameObject.FindObjectOfType<GameplayManager>();
+        gamePlayManager = GameObject.FindObjectOfType<GameplayManager>();
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Road")
+        if (collision.gameObject.tag == "Sidewalk" || collision.gameObject.tag == "Vehicle")
         {
-            return;
+            gamePlayManager.UpdateScore(bump);
         }
-        else if(collision.gameObject.name == "CrossOver")
+        else if (collision.gameObject.tag == "Lanemarker")
         {
-            return;
-        }
-        else if (collision.gameObject.name == "CenterLane")
-        {
-            gamepLayManager.UpdateLane(lanepass);
+            //Add code here for switching lanes while passing, or when some lanemarkers are meant to be crossed
+            gamePlayManager.UpdateLane(lanepass);
         }
         else
         {
-            gamepLayManager.UpdateScore(bump);
+            return;
         }
-       
     }
     // Start is called before the first frame update
     void Start()
