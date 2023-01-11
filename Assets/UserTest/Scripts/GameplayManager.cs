@@ -11,6 +11,9 @@ public class GameplayManager : MonoBehaviour
     public Text laneText;
     private int currentScore2;
 
+    public Text blinkTextRight;
+    public Text blinkTextLeft;
+
     public Text speedText;
     private float currentSpeed;
     public float UpdateDelay = 5;
@@ -29,6 +32,30 @@ public class GameplayManager : MonoBehaviour
     public void UpdateSpeed(float speed) {
         //currentSpeed = (Rigidbody X Axis Speed + Z Axis Speed)/2 == Average speed across X and Z Axis?
         //speedText.text = "Speed: " + currentSpeed.ToString();
+    }
+
+    public void updateLeftSignal(int value)
+    {
+        if (value == 1)
+        {
+            blinkTextLeft.text  = "<--";
+        }
+        else
+        {
+            blinkTextLeft.text = " ";
+        }
+    }
+
+    public void updateRightSignal(int value)
+    {
+        if (value == 0)
+        {
+            blinkTextRight.text = "-->";
+        }
+        else
+        {
+            blinkTextLeft.text = " ";
+        }
     }
 
     /*void OnEnabled()

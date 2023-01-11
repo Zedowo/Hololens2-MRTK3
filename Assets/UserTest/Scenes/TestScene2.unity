@@ -145,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &113994747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2021,8 +2021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0216ce9c6aa4b504c830eab5bd383e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftTurnText: {fileID: 0}
-  leftTurnStick: {fileID: 1667651484}
 --- !u!114 &1667651487 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4045809709324723371, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
@@ -2068,7 +2066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1737841780
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2218,7 +2216,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8724454378893721, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
       propertyPath: m_Name
-      value: LeftTurnSignal
+      value: LeftTurnSignalStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8724454378893721, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
+      propertyPath: m_TagString
+      value: TurnSignal
       objectReference: {fileID: 0}
     - target: {fileID: 3487449452145913346, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
       propertyPath: m_RootOrder
@@ -2413,6 +2415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4180381269513826155, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: blinkTextLeft
+      value: 
+      objectReference: {fileID: 1737841781}
     - target: {fileID: 4575560627051192180, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
       propertyPath: m_TagString
       value: Lanemarker
