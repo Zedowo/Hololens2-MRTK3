@@ -3,7 +3,9 @@ guid: 0216ce9c6aa4b504c830eab5bd383e45
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - leftTurnText: {instanceID: 0}
+  - leftTurnStick: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
