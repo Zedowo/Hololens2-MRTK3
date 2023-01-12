@@ -7,6 +7,11 @@ public class CoroutineTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    void awake()
+    {
         StartCoroutine(timer());
     }
 
@@ -15,8 +20,8 @@ public class CoroutineTest : MonoBehaviour
         while (true)
         {
             Debug.Log("First Print");
-            yield return new WaitForSeconds(20);
             Debug.Log("Second Print");
+            yield return new WaitForSeconds(5);
         }
     }
 
