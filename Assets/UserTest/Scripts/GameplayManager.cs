@@ -40,7 +40,7 @@ public class GameplayManager : MonoBehaviour
         {
             blinkTextLeft.text  = "<--";
         }
-        else
+        else 
         {
             blinkTextLeft.text = " ";
         }
