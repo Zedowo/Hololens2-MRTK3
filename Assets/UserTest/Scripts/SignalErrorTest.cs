@@ -15,7 +15,7 @@ public class SignalErrorTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gamePlayManager.updateLeftSignal(1);
         gamePlayManager.updateLeftSignal(0);
+       
     }
 }

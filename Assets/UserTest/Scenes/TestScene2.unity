@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -920,6 +920,18 @@ MonoBehaviour:
   executionOrder: 0
   constraintOnRotation: 3
   useLocalSpaceForConstraint: 0
+--- !u!114 &542111033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542111023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0051df72c855c19489b6f0a9e717db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &586920145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3487449452145913346, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
@@ -1996,18 +2008,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8724454378893721, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
   m_PrefabInstance: {fileID: 868024575797729513}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1667651485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667651484}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0216ce9c6aa4b504c830eab5bd383e45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1667651487 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4045809709324723371, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}
@@ -2036,7 +2036,7 @@ MonoBehaviour:
   executionOrder: 0
   constraintOnRotation: 3
   useLocalSpaceForConstraint: 0
---- !u!114 &1667651494
+--- !u!114 &1667651493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1667651484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f44ac90781504e47bafe9a727b4609e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0216ce9c6aa4b504c830eab5bd383e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1737841779
@@ -2418,6 +2418,10 @@ PrefabInstance:
       propertyPath: blinkTextLeft
       value: 
       objectReference: {fileID: 1737841781}
+    - target: {fileID: 4180381269513826155, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
+      propertyPath: blinkTextRight
+      value: 
+      objectReference: {fileID: 113994748}
     - target: {fileID: 4575560627051192180, guid: 7074a3d86d3397849ab8f3592bf5dc31, type: 3}
       propertyPath: m_TagString
       value: Lanemarker

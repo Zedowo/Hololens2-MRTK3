@@ -24,42 +24,42 @@ public class LeftTurnSignal : MonoBehaviour
 
     }*/
 
-    /*IEnumerator timer()
+    IEnumerator timer()
     {
         while (true)
         {
             if (transform.rotation.z >= 0)
             {
-                Debug.Log("Turning");
                 gamePlayManager.updateLeftSignal(1);
+                yield return new WaitForSeconds(0.5f);
                 gamePlayManager.updateLeftSignal(0);
             }
             else
             {
-                Debug.Log("Off");
                 gamePlayManager.updateLeftSignal(0);
-
             }
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(0.5f);
         }
         
-    }*/
+    }
 
     void Start()
     {
         //Green Colors is 95 210 20 255, Hex is 5FD214
-        gamePlayManager = GameObject.FindObjectOfType<GameplayManager>();
+        
     }
 
     void Awake()
     {
-       /* StartCoroutine(timer());*/
+        gamePlayManager = GameObject.FindObjectOfType<GameplayManager>();
+        StartCoroutine(timer());
     }
+
     // Update is called once per frame
     void Update()
     {
-        gamePlayManager.updateLeftSignal(1);
-        gamePlayManager.updateLeftSignal(0);
+        //gamePlayManager.updateLeftSignal(1);
+        //gamePlayManager.updateLeftSignal(0);
         //while(transform.rotation.z >= 0)
         //{
         //StartCoroutine(Blink());

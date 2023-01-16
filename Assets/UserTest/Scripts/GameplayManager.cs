@@ -48,13 +48,13 @@ public class GameplayManager : MonoBehaviour
 
     public void updateRightSignal(int value)
     {
-        if (value == 0)
+        if (value == 1)
         {
             blinkTextRight.text = "-->";
         }
         else
         {
-            blinkTextLeft.text = " ";
+            blinkTextRight.text = " ";
         }
     }
 

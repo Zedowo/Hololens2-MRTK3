@@ -12,12 +12,34 @@ public class RightTurnSignalPrint : MonoBehaviour
 
     }
 
+    void Awake()
+    {
+        gamePlayManager = GameObject.FindObjectOfType<GameplayManager>();
+        StartCoroutine(timer());
+    }
+
+    IEnumerator timer()
+    {
+        while (true)
+        {
+            if (transform.rotation.z <= 0)
+            {
+                gamePlayManager.updateRightSignal(1);
+                yield return new WaitForSeconds(0.5f);
+                gamePlayManager.updateRightSignal(0);
+            }
+            else
+            {
+                gamePlayManager.updateRightSignal(0);
+            }
+            yield return new WaitForSeconds(0.5f);
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (transform.rotation.z < 0)
-        {
-            Debug.Log("Turn!");
-        }
+     
     }
 }
