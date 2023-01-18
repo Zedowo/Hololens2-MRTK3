@@ -18,7 +18,7 @@ public class GameplayManager : MonoBehaviour
     private float currentSpeed;
     public float UpdateDelay = 5;
 
-    public void UpdateScore(int score)
+    public void UpdateScore(int score) // Does not increment digits above 10 (?)
     {
         currentScore += score;
         scoreText.text = "Collisions: " + currentScore.ToString();
