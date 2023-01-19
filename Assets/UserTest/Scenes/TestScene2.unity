@@ -410,11 +410,11 @@ GameObject:
   - component: {fileID: 462316083}
   - component: {fileID: 462316082}
   - component: {fileID: 462316088}
-  - component: {fileID: 462316089}
   - component: {fileID: 462316090}
   - component: {fileID: 462316091}
   - component: {fileID: 462316092}
   - component: {fileID: 462316093}
+  - component: {fileID: 462316089}
   m_Layer: 0
   m_Name: SteeringWheel
   m_TagString: Untagged
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 462316081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a1bf44e2291e8741ab3dec75055d9db, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b46a074d0bbb314e8a7e54a567c3e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -920,18 +920,6 @@ MonoBehaviour:
   executionOrder: 0
   constraintOnRotation: 3
   useLocalSpaceForConstraint: 0
---- !u!114 &542111033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542111023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0051df72c855c19489b6f0a9e717db78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &586920145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3487449452145913346, guid: 2ae155e1433fd0c40b49455e8b8b1a41, type: 3}

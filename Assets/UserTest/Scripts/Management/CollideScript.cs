@@ -7,12 +7,14 @@ public class CollideScript : MonoBehaviour
 {
     public int bump = 1;
     public int lanepass = 1;
+
     private GameplayManager gamePlayManager;
 
     private void Awake()
     {
         gamePlayManager = GameObject.FindObjectOfType<GameplayManager>();
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Sidewalk" || collision.gameObject.tag == "Vehicle")
