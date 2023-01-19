@@ -13,6 +13,8 @@ public class GameplayManager : MonoBehaviour
 
     public Text blinkTextRight;
     public Text blinkTextLeft;
+    private bool leftSignalOn = false;
+    private bool rightSignalOn = false;
 
     public Text speedText;
     private float currentSpeed;
@@ -34,26 +36,31 @@ public class GameplayManager : MonoBehaviour
         //speedText.text = "Speed: " + currentSpeed.ToString();
     }
 
-    public void updateLeftSignal(int value)
-    {
-        if (value == 1)
+    public void updateLeftSignal(int value) // This makes it so you can only change the signal when the other turn signal is off. This works as intended, except when the blinker gets switched while
+    {                                       // the other turn signal is in the middle of its blink. This can be fixed once the wheel resets position. The signal stick can just reset its z rotation.
+        if (value == 1 && !rightSignalOn)
         {
+            leftSignalOn = true;
             blinkTextLeft.text  = "<--";
         }
         else 
         {
+            leftSignalOn = false;
             blinkTextLeft.text = " ";
         }
     }
 
     public void updateRightSignal(int value)
     {
-        if (value == 1)
+        if (value == 1 && !leftSignalOn) // This makes it so you can only change the signal when the other turn signal is off. This works as intended, except when the blinker gets switched while
+                                         // the other turn signal is in the middle of its blink. This can be fixed once the wheel resets position. The signal stick can just reset its z rotation.
         {
+            rightSignalOn = true;
             blinkTextRight.text = "-->";
         }
         else
         {
+            rightSignalOn = false;
             blinkTextRight.text = " ";
         }
     }
