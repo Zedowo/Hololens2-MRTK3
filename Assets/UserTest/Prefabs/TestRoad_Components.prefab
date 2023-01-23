@@ -1077,6 +1077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 8933180873745054315}
   laneText: {fileID: 3566192342526830405}
+  blinkTextRight: {fileID: 0}
+  blinkTextLeft: {fileID: 0}
   speedText: {fileID: 0}
   UpdateDelay: 5
 --- !u!1 &5105000233983694408
