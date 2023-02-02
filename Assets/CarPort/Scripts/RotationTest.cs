@@ -122,8 +122,8 @@ public class RotationTest : MonoBehaviour
         }
         else
         {
-            rotationInt = Int32.Parse(potMessage);
-            RotateByDegrees(rotationInt);
+            rotationInt = 
+            RotateByDegrees(rotationInt);Int32.Parse(potMessage);
         }
 
 

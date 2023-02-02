@@ -65,6 +65,26 @@ public class GameplayManager : MonoBehaviour
         }
     }
 
+    /*public void updateCube(int value)
+    {
+        if (value == 0)
+        {
+
+        }
+        else if (value == 1)
+        {
+
+        }
+        else if (value == 2)
+        {
+
+        }
+        else
+        {
+
+        }
+    }*/
+
     /*void OnEnabled()
     {
         StartCoroutine(SpeedCalculation()); //starts speed calculation routine
